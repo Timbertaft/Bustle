@@ -14,9 +14,17 @@
 		3F5F30181D15B17B00ABE777 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F5F30161D15B17B00ABE777 /* LaunchScreen.storyboard */; };
 		3F5F30201D17340300ABE777 /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5F301F1D17340300ABE777 /* RegisterPageViewController.swift */; };
 		3F5F30221D177D7B00ABE777 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5F30211D177D7B00ABE777 /* LoginViewController.swift */; };
+		3F5F30241D18B39100ABE777 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F5F30231D18B39100ABE777 /* GoogleService-Info.plist */; };
+		3F5F30261D18D9E000ABE777 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5F30251D18D9E000ABE777 /* BaseService.swift */; };
+		3F5F302A1D1925D200ABE777 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5F30291D1925D200ABE777 /* MapViewController.swift */; };
+		3F5F302C1D19627C00ABE777 /* SubmitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5F302B1D19627C00ABE777 /* SubmitViewController.swift */; };
+		3F5F302E1D19DB6600ABE777 /* AdditionalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5F302D1D19DB6600ABE777 /* AdditionalViewController.swift */; };
+		C8301F187A2E05E5A2A5235B /* Pods_Bustle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 181F00C3E814731AE9C442A8 /* Pods_Bustle.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		181F00C3E814731AE9C442A8 /* Pods_Bustle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bustle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1891F77C98FCDDC9E68DEFAC /* Pods-Bustle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bustle.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bustle/Pods-Bustle.debug.xcconfig"; sourceTree = "<group>"; };
 		3F5F300A1D15B17B00ABE777 /* Bustle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bustle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F5F300D1D15B17B00ABE777 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F5F300F1D15B17B00ABE777 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +34,12 @@
 		3F5F30191D15B17B00ABE777 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F5F301F1D17340300ABE777 /* RegisterPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterPageViewController.swift; sourceTree = "<group>"; };
 		3F5F30211D177D7B00ABE777 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3F5F30231D18B39100ABE777 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3F5F30251D18D9E000ABE777 /* BaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		3F5F30291D1925D200ABE777 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		3F5F302B1D19627C00ABE777 /* SubmitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubmitViewController.swift; sourceTree = "<group>"; };
+		3F5F302D1D19DB6600ABE777 /* AdditionalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdditionalViewController.swift; sourceTree = "<group>"; };
+		715E54A91647579BAA59A42F /* Pods-Bustle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bustle.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bustle/Pods-Bustle.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8301F187A2E05E5A2A5235B /* Pods_Bustle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +59,8 @@
 			children = (
 				3F5F300C1D15B17B00ABE777 /* Bustle */,
 				3F5F300B1D15B17B00ABE777 /* Products */,
+				7DE7AD7DA9C34B447D4900AE /* Pods */,
+				710CA69AAF3A44C780B76B92 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,15 +76,37 @@
 			isa = PBXGroup;
 			children = (
 				3F5F300D1D15B17B00ABE777 /* AppDelegate.swift */,
+				3F5F30251D18D9E000ABE777 /* BaseService.swift */,
 				3F5F300F1D15B17B00ABE777 /* ViewController.swift */,
+				3F5F302D1D19DB6600ABE777 /* AdditionalViewController.swift */,
+				3F5F302B1D19627C00ABE777 /* SubmitViewController.swift */,
 				3F5F301F1D17340300ABE777 /* RegisterPageViewController.swift */,
 				3F5F30111D15B17B00ABE777 /* Main.storyboard */,
+				3F5F30291D1925D200ABE777 /* MapViewController.swift */,
 				3F5F30211D177D7B00ABE777 /* LoginViewController.swift */,
 				3F5F30141D15B17B00ABE777 /* Assets.xcassets */,
 				3F5F30161D15B17B00ABE777 /* LaunchScreen.storyboard */,
+				3F5F30231D18B39100ABE777 /* GoogleService-Info.plist */,
 				3F5F30191D15B17B00ABE777 /* Info.plist */,
 			);
 			path = Bustle;
+			sourceTree = "<group>";
+		};
+		710CA69AAF3A44C780B76B92 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				181F00C3E814731AE9C442A8 /* Pods_Bustle.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7DE7AD7DA9C34B447D4900AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1891F77C98FCDDC9E68DEFAC /* Pods-Bustle.debug.xcconfig */,
+				715E54A91647579BAA59A42F /* Pods-Bustle.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +116,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F5F301C1D15B17B00ABE777 /* Build configuration list for PBXNativeTarget "Bustle" */;
 			buildPhases = (
+				2C783B17AC500640973B4EF1 /* 📦 Check Pods Manifest.lock */,
 				3F5F30061D15B17B00ABE777 /* Sources */,
 				3F5F30071D15B17B00ABE777 /* Frameworks */,
 				3F5F30081D15B17B00ABE777 /* Resources */,
+				5FC89FD61C48E16A485D457A /* 📦 Embed Pods Frameworks */,
+				4235490071AE3C29092906BA /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -128,6 +170,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F5F30241D18B39100ABE777 /* GoogleService-Info.plist in Resources */,
 				3F5F30181D15B17B00ABE777 /* LaunchScreen.storyboard in Resources */,
 				3F5F30151D15B17B00ABE777 /* Assets.xcassets in Resources */,
 				3F5F30131D15B17B00ABE777 /* Main.storyboard in Resources */,
@@ -136,14 +179,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2C783B17AC500640973B4EF1 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4235490071AE3C29092906BA /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bustle/Pods-Bustle-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5FC89FD61C48E16A485D457A /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bustle/Pods-Bustle-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3F5F30061D15B17B00ABE777 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F5F302C1D19627C00ABE777 /* SubmitViewController.swift in Sources */,
+				3F5F302E1D19DB6600ABE777 /* AdditionalViewController.swift in Sources */,
 				3F5F30221D177D7B00ABE777 /* LoginViewController.swift in Sources */,
+				3F5F302A1D1925D200ABE777 /* MapViewController.swift in Sources */,
 				3F5F30101D15B17B00ABE777 /* ViewController.swift in Sources */,
 				3F5F300E1D15B17B00ABE777 /* AppDelegate.swift in Sources */,
+				3F5F30261D18D9E000ABE777 /* BaseService.swift in Sources */,
 				3F5F30201D17340300ABE777 /* RegisterPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,6 +352,7 @@
 		};
 		3F5F301D1D15B17B00ABE777 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1891F77C98FCDDC9E68DEFAC /* Pods-Bustle.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Bustle/Info.plist;
@@ -268,6 +364,7 @@
 		};
 		3F5F301E1D15B17B00ABE777 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 715E54A91647579BAA59A42F /* Pods-Bustle.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Bustle/Info.plist;
@@ -296,6 +393,7 @@
 				3F5F301E1D15B17B00ABE777 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

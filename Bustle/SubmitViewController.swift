@@ -1,26 +1,17 @@
 //
-//  LoginViewController.swift
+//  SubmitViewController.swift
 //  Bustle
 //
-//  Created by student on 6/19/16.
+//  Created by student on 6/21/16.
 //  Copyright © 2016 student. All rights reserved.
 //
 
 import UIKit
-import Firebase
 
-class LoginViewController: UIViewController {
+class SubmitViewController: UIViewController {
 
-    @IBOutlet weak var PasswordTextField: UITextField!
-    @IBOutlet weak var UsernameTextField: UITextField!
-    @IBAction func loginButtonTapped(sender: AnyObject) {
-        
-        self.dismissViewControllerAnimated(true, completion: nil);
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.hideKeyboardWhenTappedAround()
 
         // Do any additional setup after loading the view.
     }

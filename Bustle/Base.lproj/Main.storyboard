@@ -61,11 +61,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="7fk-aL-K5q">
-                                <rect key="frame" x="59" y="184" width="285" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="39q-ql-H69">
                                 <rect key="frame" x="129" y="351" width="132" height="48"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -76,10 +71,19 @@
                                     <segue destination="BYZ-38-t0r" kind="show" identifier="LoginButton" id="DnY-rR-gDE"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="7fk-aL-K5q">
+                                <rect key="frame" x="59" y="184" width="285" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="PasswordTextField" destination="FNy-Es-hpN" id="8oM-ki-2Vm"/>
+                        <outlet property="UsernameTextField" destination="7fk-aL-K5q" id="zYR-9D-Xe0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uPY-mp-MxY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -120,20 +124,20 @@
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Interests:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HYI-ux-uFL">
-                                <rect key="frame" x="181" y="314" width="72" height="21"/>
+                                <rect key="frame" x="181" y="391" width="72" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hHp-3u-GOR" userLabel="Interests Text Field">
-                                <rect key="frame" x="65" y="343" width="298" height="150"/>
+                                <rect key="frame" x="65" y="420" width="298" height="150"/>
                                 <color key="backgroundColor" red="0.78467758715590552" green="0.98972766666960121" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <string key="text">Enter your interests here separated by a comma.  Please be as specific as possible (instead of 'sports' enter 'tennis, football, and swimming')</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4rn-pH-8V5">
-                                <rect key="frame" x="168" y="506" width="83" height="38"/>
+                                <rect key="frame" x="168" y="583" width="83" height="38"/>
                                 <color key="backgroundColor" red="0.21960784310000001" green="0.027450980390000001" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Register"/>
                                 <connections>
@@ -141,7 +145,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ek-g7-gkB">
-                                <rect key="frame" x="120" y="552" width="178" height="30"/>
+                                <rect key="frame" x="120" y="629" width="178" height="30"/>
                                 <state key="normal" title="I Am Already Registered"/>
                                 <connections>
                                     <action selector="preregisterButtonTapped:" destination="a4k-63-QRd" eventType="touchUpInside" id="dJQ-Dq-3uB"/>
@@ -175,11 +179,23 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Address:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Phy-DQ-pDT">
+                                <rect key="frame" x="60" y="320" width="68" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CFm-Lf-qx8">
+                                <rect key="frame" x="60" y="342" width="248" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
+                        <outlet property="AddressTextField" destination="CFm-Lf-qx8" id="2ka-In-Br6"/>
                         <outlet property="InterestsTextField" destination="hHp-3u-GOR" id="abS-kw-61n"/>
                         <outlet property="PasswordTextField" destination="w6F-VB-NhU" id="bbQ-xa-Y1V"/>
                         <outlet property="RepeatPasswordTextField" destination="ysh-vM-qFd" id="5sw-uw-6pO"/>
@@ -293,10 +309,10 @@
             </objects>
             <point key="canvasLocation" x="-1097" y="238"/>
         </scene>
-        <!--View Controller-->
+        <!--Map View Controller-->
         <scene sceneID="n8e-XQ-iL4">
             <objects>
-                <viewController id="Ya5-l0-oJ9" sceneMemberID="viewController">
+                <viewController id="Ya5-l0-oJ9" customClass="MapViewController" customModule="Bustle" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wkH-ZF-r50"/>
                         <viewControllerLayoutGuide type="bottom" id="aIu-n2-Cmn"/>
@@ -394,10 +410,10 @@
             </objects>
             <point key="canvasLocation" x="-376" y="1444"/>
         </scene>
-        <!--View Controller-->
+        <!--Submit View Controller-->
         <scene sceneID="6fY-aT-hHW">
             <objects>
-                <viewController id="Z6d-GB-xZw" sceneMemberID="viewController">
+                <viewController id="Z6d-GB-xZw" customClass="SubmitViewController" customModule="Bustle" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pBC-Ri-RNa"/>
                         <viewControllerLayoutGuide type="bottom" id="IOH-bi-Zn5"/>
